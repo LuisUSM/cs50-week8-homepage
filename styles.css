@@ -5,7 +5,14 @@
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(63, 63, 63);
 }
 
 /* Navigation bar */
@@ -155,7 +162,7 @@
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)),
-    url('./assets/images/space-gif.gif');
+    url('./assets/images/space-gif-2.jpg');
   background-size: cover;
 }
 
