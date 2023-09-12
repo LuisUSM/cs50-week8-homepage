@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Navigation bar */
+#nav-bar {
+  background-color: rgb(84, 84, 84);
+}
+
+.navbar-items > li:hover {
+  background-color: rgb(120, 120, 120);
+  transition: background-color 0.25s ease-in;
+  margin-right: 0px;
+}
+
+/* Index HTML */
+#homepage {
+  background-image: 
+    linear-gradient(
+  rgba(0, 0, 0, 0.5), 
+  rgba(0, 0, 0, 0.5)),
+    url('./assets/images/blurred-forest.jpg');
+  background-size: cover;
+  padding: 120px 0px;
+}
+
+.homepage-img {
+  height: 270px;
+  width: 270px;
+  background-image: url('./assets/images/luisusm.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 75px 15px rgba(255, 255, 255, 0.5);
+  transition: rotate 1.5s ease-in-out, translate 2s ease-in-out;
+}
+
+.homepage-img-rotate {
+  rotate: 360deg;
+}
+
+#homepage-hero {
+  transition: translate 2s ease-in-out;
+}
+
+#homepage-text {
+  transition: translate 2s ease-in-out;
+}
+
+/* USM HTML */
+#usm-page-hero {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25), 
+    rgba(0, 0, 0, 0.25)),
+    url('./assets/images/starred-sky.jpg');
+  background-size: cover;
+}
+
+#usm-page-title {
+  scale: 1;
+  transition: scale 0.25s ease-out;
+  animation: moveUSM 3s forwards;
+}
+
+#usm-page-title:hover {
+  scale: 1.075;
+  transition: scale 0.25s ease-out;
+}
+
+.usm-page-hero-text {
+  animation: moveUSMText 3s forwards;
+}
+
+#usm {
+  height: 120px;
+  margin: 120px 0 30px 0;
+}
+
+.usm-carousel-img {
+  height: 900px;
+}
+
+#usm-page-bottom {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)),
+    url('./assets/images/desk-with-books.jpg');
+  background-size: cover;
+}
+
+.usm-page-bottom-div {
+  animation: moveUSMBottomText 3s forwards;
+}
+
+.usm-page-bottom-text {
+  transition: scale 0.25s ease-in-out;
+}
+
+.usm-page-bottom-text:hover {
+  scale: 1.075;
+}
+
+/* Hobbies HTML */
+#hobbies-page-hero {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.1), 
+    rgba(0, 0, 0, 0.1)),
+    url('./assets/images/seemless-brick-wall-2.jpg');
+  background-repeat: repeat-x;
+  animation: moveBackgroundHorizontally 30s linear infinite;
+}
+
+.hobbies-page-title {
+  opacity: 0;
+}
+
+#hobbies-page-title-id {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#hobbies-page-album {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)),
+    url('./assets/images/wall-with-vines.jpg');
+  background-size: cover;
+}
+
+.hobbies-page-card {
+  background-color: whitesmoke !important;
+  scale: 1;
+}
+
+.hobbies-page-card:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.5) !important;
+  z-index: 10;
+}
+
+.card {
+  opacity: 0;
+}
+
+/* Dreams HTML */
+#dreams-page-hero {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)),
+    url('./assets/images/space-gif.gif');
+  background-size: cover;
+}
+
+.dreams-page-hero-text {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.dream {
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out, translate 0.75s ease-in-out, scale 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+#dreams-page-album {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)),
+    url('./assets/images/white-wall.jpg');
+  background-size: cover;
+}
+
+.dreams-card {
+  border-radius: 12.5% 7.5%;
+  scale: 1;
+  box-shadow: 0px 0px 50px 25px rgba(255, 255, 255, 0.075) !important;
+}
+
+.dreams-card:hover {
+  scale: 1.05;
+  background-color: white;
+  box-shadow: 0px 0px 75px 25px rgba(255, 255, 255, 0.5) !important;
+  z-index: 10;
+  transition: all 0.25s ease-out;
+}
+
+.dreams-page-img {
+  height: 480px;
+  background-color: burlywood;
+  background-size: cover;
+  object-fit: contain;
+  border: 32px solid white;
+}
+
+/* Footer */
+#footer {
+  background-color: rgb(63, 63, 63);
+}
+
+.footer-items > li:hover {
+  font-weight: 600;
+  transition: font-weight 0.1s ease-in;
+}
+
+.footer-sn-img {
+  height: 48px;
+  filter: invert(100%) hue-rotate(82deg) brightness(105%) contrast(105%);
+}
+
+/* ANIMATIONS */
+/* Animations */
+@keyframes moveUSM {
+  0% {
+    translate: -350% -350%;
+  }
+  100% {
+    translate: 0% 0%;
+  }
+}
+
+@keyframes moveUSMText {
+  0% {
+    translate: -250% 0;
+  }
+  100% {
+    translate: 0% 0%;
+  }
+}
+
+@keyframes moveUSMBottomText {
+  0% {
+    translate: 250% 0;
+  }
+  100% {
+    translate: 0% 0%;
+  }
+}
+
+@keyframes moveBackgroundHorizontally {
+  0% 
+  {
+      background-position: 0 0;
+  }
+  100% 
+  {
+      background-position: 100% 0;
+  }
+}
+
+/* HELPER CLASSES */
+.on-top {
+  translate: 0 -225%;
+}
+
+.on-left {
+  translate: -75% 0;
+}
+
+.on-right {
+  translate: 75% 0;
+}
+
+.revealed { }
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px) {
+  #usm {
+    height: 105px;
+  }
+
+  .usm-carousel-img {
+    height: 720px;
+  }
+  
+  .dreams-page-img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 800px) {
+  #usm {
+    height: 90px;
+  }
+
+  .usm-carousel-img {
+    height: 480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .usm-carousel-img {
+    height: 360px;
+  }
+}
