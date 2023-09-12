@@ -7,12 +7,9 @@
   vertical-align: baseline;
 }
 
-html {
+.mobile-troubleshooting {
   overflow-x: hidden;
-}
-
-body {
-  background-color: rgb(63, 63, 63);
+  position: relative;
 }
 
 /* Navigation bar */
@@ -291,7 +288,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {  
   #usm {
     height: 90px;
   }
