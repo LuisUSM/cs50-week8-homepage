@@ -275,6 +275,31 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 1280px) {
+  .homepage-img {
+    height: 480px;
+    width: 480px;
+  }
+
+  #homepage-hero > h1 {
+    margin-top: 72px;
+    font-size: 60px;
+  }
+
+  #homepage-hero > h2 {
+    margin-top: 60px;
+    font-size: 48px;
+  }
+
+  #homepage-text > div > * {
+    font-size: 40px;
+    margin: 0px 64px;
+  }
+
+  #homepage-text > div > div {
+    padding-top: 32px;
+    scale: 1.5;
+  }
+
   #usm {
     height: 105px;
   }
